@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+ <TextView
+  android:id="@+id/nachricht"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="26dp"
+     android:layout_marginTop="24dp"
+  app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+  app:layout_constraintEnd_toEndOf="parent"
+  android:text="BUNDESNACHRICHTENDIENST"/>
+ 
+ <EditText
+     android:id="@+id/login"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:layout_marginTop="20dp"
+     android:hint="First Name"
+     android:layout_marginStart="16dp"
+     android:layout_marginEnd="16dp"
+     android:maxLength="30"
+     android:maxLines="1"
+     android:imeOptions="actionDone"
+     app:layout_constraintTop_toBottomOf="@id/nachricht"/>.
+ <EditText
+     android:id="@+id/name"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+  android:layout_marginTop="20dp"
+  android:hint="Last Name"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+     android:maxLines="1"
+     android:maxLength="30"
+     app:layout_constraintTop_toBottomOf="@id/login"/>
+ <EditText
+     android:id="@+id/password"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+  android:hint="PASSWORD"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+     android:maxLines="1"
+     android:maxLength="30"
+app:layout_constraintTop_toBottomOf="@id/name"/>
+
+ <EditText
+  android:id="@+id/email"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+  android:layout_marginTop="20dp"
+  android:hint="example@example.com"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+     android:maxLines="1"
+     android:maxLength="30"
+  app:layout_constraintTop_toBottomOf="@id/password"/>
+
+ <EditText
+  android:id="@+id/phone"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+  android:layout_marginTop="20dp"
+  android:hint="TEN DIGIT PHONE NO"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+     android:maxLines="1"
+     android:maxLength="30"
+  app:layout_constraintTop_toBottomOf="@id/email"/>
+
+ <Button
+     android:id="@+id/kt"
+  android:text="REGISTRATION"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="25dp"
+  android:layout_marginTop="17dp"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+  app:layout_constraintTop_toBottomOf="@id/phone"/>
+
+ <Button
+     android:id="@+id/mak"
+  android:text="Login"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:textSize="25dp"
+  android:layout_marginTop="20dp"
+  android:layout_marginStart="16dp"
+  android:layout_marginEnd="16dp"
+  app:layout_constraintTop_toBottomOf="@id/kt"/>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
